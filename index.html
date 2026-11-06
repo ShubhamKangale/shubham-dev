@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shubham Kangale — Editor, Designer & Web Developer</title>
+<meta name="description" content="Shubham Kangale: video editor, graphic designer, UI/UX designer and web developer.">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader"><canvas id="lember"></canvas><div class="lcard"><img id="lg" alt=""><img id="lf" alt=""></div><p class="lt1">Shubham Kangale · Portfolio</p><p class="lt2">Editing · Design · UI/UX · Web</p><div class="lrow"><span id="lt">Loading the card</span><b id="pct">0%</b></div><div class="lbar"><i></i></div><button class="btn p" id="enter" hidden>Click to enter <b>→</b></button></div>
+<button class="cord" id="cord" aria-label="Pull to switch light and dark"><i></i></button><div id="flash"></div>
+<header class="bar"><button class="menu" id="menuBtn" aria-expanded="false"><span>≡</span><span class="ml"> Menu</span></button><span class="pg" hidden><b id="pg">000</b></span><div class="right"><span id="clock"></span><span id="date"></span></div></header>
+<nav id="nav" aria-label="Main"><span class="nm">+ Shubham</span><button class="x" id="closeNav">Close</button>
+<a href="#top"><i>01</i>Home</a><a href="#work" data-skill="0"><i>02</i>Video Editing</a><a href="#work" data-skill="1"><i>03</i>Graphic Design</a><a href="#work" data-skill="2"><i>04</i>UI/UX Design</a><a href="#work" data-skill="3"><i>05</i>Web Development</a><a href="#story"><i>06</i>My story</a><a href="#contact"><i>07</i>Contact</a>
+<div class="nb"><span>Local time <span id="nclock"></span></span><button class="btn" data-contact>Start a project →</button></div></nav>
+
+<main id="top">
+<section class="hero">
+  <div>
+    <p class="tag"><i></i>Independent Freelancer · Remote-first</p>
+    <h1>Hi, I'm Shubham.<span class="m">I am a</span></h1>
+    <div class="note"><span id="tw"></span><span class="caret"></span></div>
+    <div class="cta"><button class="btn p" data-contact>Start a project <b>→</b></button><a class="l" href="#work">See my work</a></div>
+  </div>
+  <figure class="pic" id="pic" role="button" tabindex="0" aria-label="Open my ability card"><img src="assets/photo.webp" alt="Portrait of Shubham Kangale" width="720" height="876"><img class="tint" alt="" aria-hidden="true"><span>My ability card</span></figure>
+  <div class="hbar"><span>Available for work</span><span class="mid">Remote-first, worldwide</span><span>Scroll to explore ↓</span></div>
+</section>
+
+<section id="work" class="sec"><div class="pinbox">
+  <p class="sub">My work, one door per skill</p>
+  <h2>Magic happens <br>behind the doors</h2>
+  <div class="dinfo"><h3 id="dt">Video Editing</h3><p class="mono" id="dsub"></p><div class="dots"><i></i><i></i><i></i><i></i></div></div>
+  <div class="floor"><div class="wall">
+    <button class="door" style="--c:#2F4F9E" aria-label="Open the Video editor door"><div class="arch"><div class="glow"></div><div class="leaf"><span class="pl">Video<br>Editor</span><span class="hd"></span></div></div><span class="enter">Click to enter</span></button>
+    <button class="door" style="--c:#5C4F73" aria-label="Open the Graphic designer door"><div class="arch"><div class="glow"></div><div class="leaf"><span class="pl">Graphic<br>Designer</span><span class="hd"></span></div></div><span class="enter">Click to enter</span></button>
+    <button class="door" style="--c:#5E9A78" aria-label="Open the UI/UX designer door"><div class="arch"><div class="glow"></div><div class="leaf"><span class="pl">UI/UX<br>Designer</span><span class="hd"></span></div></div><span class="enter">Click to enter</span></button>
+    <button class="door" style="--c:#D9622B" aria-label="Open the Web developer door"><div class="arch"><div class="glow"></div><div class="leaf"><span class="pl">Web<br>Developer</span><span class="hd"></span></div></div><span class="enter">Click to enter</span></button>
+  </div></div>
+  <p class="hint">Tap a door to enter</p>
+  </div></section>
+
+<section id="story" class="sec story">
+  <canvas id="dust" aria-hidden="true"></canvas>
+  <div class="sg">
+    <div class="sticky"><p class="sub">My story</p><h2>Let's go back in time.</h2><div class="yr" id="yr" aria-live="polite"></div><p class="rng" id="rng"></p><div class="cn"><p class="cnt" id="cnt">01 / 04</p><span class="bar2"><i id="cbar"></i></span></div></div>
+    <ul class="tl" id="tl">
+      <li data-y="2026" data-c="#6b3410" data-cl="#F2A97E"><span class="when">NOW</span><h3>Independent freelancer</h3><p class="org">Working for myself, remote-first</p><p class="bp">Video editing, graphic design, UI/UX and websites, carried from the first sketch to launch.</p><p class="bp">Working directly with clients, wherever they are.</p></li>
+      <li data-y="2026" data-c="#12306b" data-cl="#BFC9EE"><span class="when">AUG 2026</span><h3>Graphic &amp; Web Designer Assistant (NSQF Level 4)</h3><p class="org">MSME Technology Centre (Indo-German Tool Room), Indore</p><p class="bp">Certified under NCVET and the NSQF skills framework.</p><p class="bp">Skills include digital illustration and employability.</p></li>
+      <li data-y="2024" data-c="#3d3d14" data-cl="#E8CC8C"><span class="when">2024 – 2028 · STUDYING</span><h3>B.Tech, Computer Science</h3><p class="org">Swami Vivekanand College of Engineering (SVCE), Indore</p><p class="bp">Bachelor of Technology in Computer Science, currently studying.</p><p class="bp">CGPA 7.56.</p></li>
+      <li data-y="2023" data-c="#3a1d4a" data-cl="#E3C6EE"><span class="when">2023 – PRESENT</span><h3>Editor, designer &amp; web developer</h3><p class="org">Video editing, design, UI/UX and websites</p><p class="bp">Taking projects from the first sketch to launch.</p><p class="bp">Built AI Resume Analyzer with Python, Flask, MySQL and Google Gemini.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="project" class="sec">
+  <div class="pjbox">
+  <p class="sub">Things I built</p><h2>Projects</h2>
+  <div class="pjd" aria-hidden="true"><i class="on"></i><i></i></div>
+  <div class="pjt">
+  <a class="proj" href="https://resumeanalyzer-rr8k.onrender.com/" target="_blank" rel="noopener"><div><h3>AI Resume Analyzer</h3><p>An AI-powered resume analyzer built with Python, Flask, MySQL and Google Gemini. Upload a resume and get a review of its strengths and what to improve.</p></div><span class="btn p">Open live site <b>↗</b></span></a>
+  <a class="proj" href="https://spiderportfolio-sk.vercel.app/" target="_blank" rel="noopener"><div><h3>Spider Portfolio</h3><p>A dark, animated personal portfolio with a bold spider-themed hero, a photo that reveals on hover, project cards and a contact form.</p></div><span class="btn p">Open live site <b>↗</b></span></a>
+  </div>
+  </div>
+</section>
+
+<section id="contact" class="sec dk final">
+  <p class="tag"><i></i>Available for new work</p>
+  <h2>Got a project? <span>Let's build it together.</span></h2>
+  <p class="sub">I'm taking on new freelance work: videos, designs, interfaces and websites. Tell me what you're building and I'll get back to you within a day.</p>
+  <div class="cta"><button class="btn p" data-contact>Start a project <b>→</b></button><a class="l" href="#work">See my work</a></div>
+</section>
+</main>
+
+<footer class="dk">
+  <div><h4>Work</h4><ul><li><a href="#work" data-skill="0">Video Editing</a></li><li><a href="#work" data-skill="1">Graphic Design</a></li><li><a href="#work" data-skill="2">UI/UX Design</a></li><li><a href="#work" data-skill="3">Web Development</a></li></ul></div>
+  <div><h4>Navigate</h4><ul><li><a href="#top">Home</a></li><li><a href="#story">My story</a></li><li><a href="#project">Project</a></li><li><a href="#contact">Contact</a></li></ul></div>
+  <div><h4>Social</h4><ul>
+    <li><a href="https://www.instagram.com/shubhamkangale_?igsh=MWV5eG1vcG1mYmV4MA==" target="_blank" rel="noopener">Instagram</a></li>
+    <li><a href="https://youtube.com/@shubhamkangale-sk?si=is269A1t1YqV3NlF" target="_blank" rel="noopener">YouTube</a></li>
+    <li><a href="https://github.com/ShubhamKangale" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/shubhamkangale500" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
+  <div class="em"><h4>Email</h4><ul><li><a href="mailto:shubhamkangale.info@gmail.com">shubhamkangale.info@gmail.com</a></li></ul></div>
+  <div class="fst"><h4>Status</h4><ul><li>Available for work</li><li>Remote-first, worldwide</li><li>Local time <b id="ft"></b></li></ul></div>
+  <div class="fine"><p>© <span id="cy"></span> Shubham Kangale. Designed and built by Shubham with the help of AI tools.</p><div class="frow"><a href="#legal" id="crl">Privacy &amp; credits</a><a href="#top">Back to top ↑</a></div></div>
+</footer>
+
+<div id="gate" aria-hidden="true"><div id="ebd"></div><p id="et"></p></div>
+<div id="room" role="dialog" aria-modal="true" aria-label="Skill details"><div class="rtop"><button id="back">← Back to the doors</button><button id="rmenu">≡ Menu</button></div><div class="rin"><h2 id="rt"></h2><p class="rd" id="rs"></p><div id="rc"></div><div class="rcta"><button class="btn p" data-contact>Get in touch <b>→</b></button></div></div></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="burnf"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="38"/></filter></svg>
+<div id="ac" role="dialog" aria-modal="true" aria-label="Ability card">
+  <canvas id="ember"></canvas>
+  <div class="ach"><div><b>SHUBHAM KANGALE</b><i>Ability card</i></div><button id="acx">× Close</button></div>
+  <div class="acl"><p class="n">SHUBHAM KANGALE</p><span class="lb"><i id="acb"></i></span><p class="t"><span>LOADING THE CARD</span><b id="acp">0%</b></p></div>
+  <div class="acs"><div class="card3d" id="c3d">
+    <div class="face front"><div class="inner"></div>
+      <div class="plate">Shubham Kangale</div>
+      <div class="photo"><img id="acimg" alt="Shubham Kangale"><div class="holo"></div></div>
+      <div class="strip">Independent Freelancer</div>
+      <div class="stats"><div class="row"><span>Video Editing</span><span class="pips"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="e"></i></span><b>90</b></div><div class="row"><span>Graphic Design</span><span class="pips"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="e"></i><i class="e"></i></span><b>85</b></div><div class="row"><span>UI/UX Design</span><span class="pips"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="e"></i><i class="e"></i></span><b>80</b></div><div class="row"><span>Web Development</span><span class="pips"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="e"></i><i class="e"></i></span><b>80</b></div></div>
+      <div class="foot"><span><small>Based</small>India</span><span><small>Works</small>Remotely</span><span><small>Reply</small>&lt; 24h</span></div>
+      <svg class="orn" viewBox="0 0 300 426" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f9e18a"/><stop offset=".5" stop-color="#b98a2c"/><stop offset="1" stop-color="#f3d27a"/></linearGradient><g id="cf"><path d="M12 46C12 26 26 12 46 12V16C30 16 16 30 16 46Z" fill="url(#gd)"/><path d="M18 18C30 17 36 27 29 34C25 38 18 33 22 28" fill="none" stroke="url(#gd)" stroke-width="1.6"/><circle cx="20" cy="20" r="3.4" fill="#7a0f22" stroke="url(#gd)" stroke-width="1.2"/></g><g id="gem"><circle r="3.6" fill="#7a0f22" stroke="url(#gd)" stroke-width="1.3"/></g><path id="dm" d="M0-5L4 0L0 5L-4 0Z" fill="url(#gd)"/></defs><rect x="9" y="9" width="282" height="408" rx="9" fill="none" stroke="url(#gd)" stroke-width="2.2"/><rect x="13.5" y="13.5" width="273" height="399" rx="7" fill="none" stroke="url(#gd)" stroke-width=".9" opacity=".8"/><use href="#cf"/><use href="#cf" transform="translate(300 0) scale(-1 1)"/><use href="#cf" transform="translate(0 426) scale(1 -1)"/><use href="#cf" transform="translate(300 426) scale(-1 -1)"/><rect x="52" y="18" width="196" height="36" rx="18" fill="none" stroke="url(#gd)" stroke-width="2"/><rect x="55" y="21" width="190" height="30" rx="15" fill="none" stroke="url(#gd)" stroke-width=".8" opacity=".8"/><use href="#gem" x="48" y="36"/><use href="#gem" x="252" y="36"/><use href="#dm" x="150" y="17"/><use href="#dm" x="150" y="55"/><rect x="22" y="62" width="256" height="150" rx="3" fill="none" stroke="url(#gd)" stroke-width="2.4"/><rect x="25" y="65" width="250" height="144" rx="2" fill="none" stroke="url(#gd)" stroke-width=".8" opacity=".8"/><use href="#gem" x="22" y="62"/><use href="#gem" x="278" y="62"/><use href="#gem" x="22" y="212"/><use href="#gem" x="278" y="212"/><use href="#dm" x="150" y="62"/><use href="#dm" x="150" y="212"/><rect x="50" y="218" width="200" height="13" rx="6.5" fill="none" stroke="url(#gd)" stroke-width="1.4"/><rect x="22" y="236" width="256" height="138" rx="8" fill="none" stroke="url(#gd)" stroke-width="2.4"/><rect x="25" y="239" width="250" height="132" rx="6" fill="none" stroke="url(#gd)" stroke-width=".8" opacity=".8"/><use href="#gem" x="22" y="236"/><use href="#gem" x="278" y="236"/><use href="#gem" x="22" y="374"/><use href="#gem" x="278" y="374"/><path d="M40 305H260" stroke="url(#gd)" stroke-width="1" opacity=".9"/><use href="#dm" x="150" y="305"/></svg>
+      <div class="glare"></div><div class="burn"><div class="cover"></div><div class="edge"></div></div></div>
+    <div class="face back"><svg viewBox="0 0 200 284" width="100%" height="100%"><defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6dc8a"/><stop offset="1" stop-color="#a8761a"/></linearGradient></defs><rect x="8" y="8" width="184" height="268" rx="10" fill="none" stroke="url(#gg)" stroke-width="2"/><rect x="14" y="14" width="172" height="256" rx="7" fill="none" stroke="#7a5a1e"/><g transform="translate(100 142)" fill="none" stroke="url(#gg)"><circle r="74" stroke-width="2.5"/><circle r="68" stroke-width="1" stroke-dasharray="1.5 4"/><circle r="58" stroke-width="2"/><circle r="40" stroke-width="1.5"/><circle r="14" stroke-width="2"/><path d="M0-56L7-7L56 0L7 7L0 56L-7 7L-56 0L-7-7Z" stroke-width="1.4"/><path d="M0-30V30M-30 0H30" stroke-width=".8"/></g></svg></div>
+  </div></div>
+  <p class="achint" id="achint"></p>
+</div>
+<div id="legal" role="dialog" aria-modal="true" aria-label="Privacy and credits" aria-hidden="true"><div class="lg">
+<button class="lgb" id="lb" type="button">← Back to the portfolio</button>
+<p class="lge">Privacy &amp; credits</p>
+<h1>Your privacy, and who made what.</h1>
+<p class="lgl">This site is a personal portfolio. It has no cookies, no analytics and no advertising, and it only receives your details if you choose to email me. It was also built with the help of AI tools, and you should know that up front.</p>
+
+<h2>Built with AI tools</h2>
+<div class="lgbox"><b>In short:</b> this portfolio was designed and built with the help of AI tools. The code, the layout and much of the written text were produced with AI assistance, mainly Anthropic’s Claude, and some of the sample visuals and videos may be AI-assisted or AI-generated.</div>
+<p>I decide what goes live and I am responsible for what is published here. The AI tools helped me build and write faster; they did not replace my own judgement, and they are not a client, a colleague or an endorsement. Pieces that are concept samples are marked as samples on the skill pages.</p>
+
+<h2>Privacy notice</h2>
+<div class="lgbox"><b>In short:</b> no advertising, no analytics, no tracking pixels and no cookies. The only outside service the page loads is Google Fonts for the typefaces. Nothing you type here is stored on a server.</div>
+<h3>Who is responsible</h3>
+<p>Shubham Kangale, an independent designer and developer. You can reach me at <a href="mailto:shubhamkangale.info@gmail.com">shubhamkangale.info@gmail.com</a>.</p>
+<h3>What this site stores on your device</h3>
+<p>Nothing. It sets no cookies and writes nothing to your browser’s local storage. Your light or dark mode choice only lasts until you reload the page.</p>
+<h3>Google Fonts</h3>
+<p>The typefaces are loaded from Google Fonts. When the page opens, your browser asks Google’s servers for the font files, so Google receives technical details such as your IP address and browser type, under Google’s own privacy policy. I do not receive that information and the site does not use it for anything else.</p>
+<h3>When you contact me</h3>
+<p>The “Get in touch” form does not send anything to a server. When you press the button it opens your own email app with your name, email address and message filled in, and nothing is sent until you press send there. If you send it, the email travels through your email provider to my inbox (Gmail, run by Google). Writing to me directly by email works the same way.</p>
+<p>I use what you send only to reply to you and to talk about your project, never for marketing. I keep it only as long as it is useful for our work together, and I will delete it if you ask.</p>
+<h3>The hosting provider</h3>
+<p>Like every website, this one is delivered by a hosting service, whose servers briefly process technical details such as your IP address and browser type to deliver the pages and protect them from abuse. That is governed by the host’s own privacy policy. I do not use those logs to identify visitors.</p>
+<h3>Links to other websites</h3>
+<p>The site links to my social profiles and to live project pages run by other people or companies. Once you follow a link you are on their site and under their privacy policy.</p>
+<h3>Your rights</h3>
+<p>You can ask me what personal data I hold about you, ask me to correct it, or ask me to delete it, by emailing me. I will reply within 30 days.</p>
+
+<h2>Work shown on this site</h2>
+<p>The pieces on the skill pages are my own portfolio work. Some are concept or sample pieces made to show a skill, and some were made with AI assistance as described above.</p>
+<p>Client, company and product names, logos, screenshots and brand material that appear in some samples belong to their respective owners. They are shown only to describe my role in the work, and showing them does not mean those companies endorse this site. If you own any of this material and would like it changed or removed, email me and I will act on it promptly.</p>
+<p>The original designs, photographs, videos and text on this site are © Shubham Kangale. Please do not copy, republish or reuse them without my written permission.</p>
+
+<h2>Credits &amp; licences</h2>
+<p>This site is built from plain HTML, CSS and JavaScript with no third-party code libraries. Credit where it is due:</p>
+<div class="lgt" role="table">
+<div class="lgr lgh" role="row"><span role="columnheader">Tool or font</span><span role="columnheader">Used for</span><span role="columnheader">Licence</span></div>
+<div class="lgr" role="row"><span role="cell">Claude (Anthropic)</span><span role="cell">AI help with code, layout and text</span><span role="cell">Anthropic’s terms</span></div>
+<div class="lgr" role="row"><span role="cell">Bricolage Grotesque</span><span role="cell">Headings</span><span role="cell">SIL Open Font License 1.1</span></div>
+<div class="lgr" role="row"><span role="cell">DM Sans</span><span role="cell">Body text</span><span role="cell">SIL Open Font License 1.1</span></div>
+<div class="lgr" role="row"><span role="cell">DM Mono</span><span role="cell">Small labels</span><span role="cell">SIL Open Font License 1.1</span></div>
+</div>
+
+<h2>No warranty</h2>
+<p>This site is provided for information about my work. I try to keep it accurate and up to date, but it is provided as it is, without any guarantee.</p>
+<p class="lgf">Last updated 3 November 2026 · © 2026 Shubham Kangale</p>
+</div></div>
+
+<dialog id="dlg">
+  <button class="x2" id="dx" aria-label="Close">×</button>
+  <div id="ok" hidden><h2>Almost there</h2><p>Your email app has opened with your message ready. Press send there and I'll reply within a day.</p></div>
+  <h2 id="dh">Start a project</h2>
+  <form id="f"><label>Name<input id="n" required></label><label>Email<input id="e" type="email" required></label><label>Project<textarea id="m" rows="4" required></textarea></label><button class="btn p" type="submit">Write the email</button></form>
+</dialog>
+
+<script src="js/script.js"></script>
+</body>
+</html>
