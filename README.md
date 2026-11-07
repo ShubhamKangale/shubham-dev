@@ -27,6 +27,10 @@ To publish it for free, use GitHub Pages (Settings → Pages → deploy from the
 - Text of the laptop hover panel on each door: `js/script.js`, search for `const DI=[`.
 - Privacy & credits text: `index.html`, search for `id="legal"`.
 
+## Link preview card
+
+`index.html` has Open Graph tags and `assets/og-image.jpg` (1200x630) so that a shared link shows as a card: photo, title, description and link. After deploying, replace `https://YOUR-SITE-URL` (3 places in the `<head>`) with your real site link. If you change the preview later, WhatsApp, Facebook and LinkedIn keep the old one for a while; refresh it with the Facebook Sharing Debugger or LinkedIn Post Inspector.
+
 ## Notes
 
 - The contact form does not send anything to a server. It opens the visitor's own email app with the message filled in.
