@@ -29,7 +29,7 @@ To publish it for free, use GitHub Pages (Settings → Pages → deploy from the
 
 ## Link preview card
 
-`index.html` has Open Graph tags and `assets/og-image.jpg` (1200x630) so that a shared link shows as a card: photo, title, description and link. After deploying, replace `https://YOUR-SITE-URL` (3 places in the `<head>`) with your real site link. If you change the preview later, WhatsApp, Facebook and LinkedIn keep the old one for a while; refresh it with the Facebook Sharing Debugger or LinkedIn Post Inspector.
+`index.html` has Open Graph tags and `assets/og-image-v2.jpg` (a 1200x1200 square photo) so that a shared link shows as a card with the photo, title, description and link. The site address `https://shubhamkangale.pages.dev` is already set in the tags. If you move to another address, replace it in the `<head>`. To change the preview picture, save it under a new file name and update the two image lines, because WhatsApp, Facebook and LinkedIn remember the old picture for a while.
 
 ## Notes
 
