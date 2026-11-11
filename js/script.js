@@ -202,11 +202,11 @@ const rio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.tar
 document.querySelectorAll('.sec h2,.proj,.final .sub').forEach(el=>{el.classList.add('rv');rio.observe(el)});
 const tk2=()=>{const d=new Date();$('#date').textContent=d.toLocaleDateString([],{day:'numeric',month:'long',year:'numeric'});$('#nclock').textContent=$('#ft').textContent=d.toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})};tk2();setInterval(tk2,30000);
 
-// laptop: fit the "Magic happens behind the doors" heading to one line, as large as the width allows
+// fit the "Magic happens behind the doors" heading to the width: one line on a laptop, two lines on a phone, as large as the real font allows
 (()=>{const hd=document.querySelector('#work h2');if(!hd)return;const mq=matchMedia('(min-width:761px)');
- const fit=()=>{if(!mq.matches){hd.style.fontSize='';return}
-  hd.style.fontSize='100px';const r=document.createRange();r.selectNodeContents(hd);const w=r.getBoundingClientRect().width;const avail=hd.clientWidth;
-  if(w>0&&avail>0)hd.style.fontSize=Math.max(36,Math.min(120,100*avail*.97/w)).toFixed(1)+'px'};
+ const fit=()=>{const lap=mq.matches;hd.style.fontSize='100px';const r=document.createRange();r.selectNodeContents(hd);
+  const w=lap?r.getBoundingClientRect().width:Math.max(0,...[...r.getClientRects()].map(x=>x.width));const avail=hd.clientWidth;
+  if(w>0&&avail>0)hd.style.fontSize=Math.max(lap?36:28,Math.min(lap?120:60,100*avail*(lap?.97:.93)/w)).toFixed(1)+'px'};
  fit();addEventListener('resize',fit);mq.addEventListener('change',fit);
  if(document.fonts){document.fonts.ready.then(fit);document.fonts.addEventListener('loadingdone',fit)}})();
 

@@ -261,7 +261,7 @@ footer b{font-weight:500;margin-left:.4em}
 .tl li.on::before{background:#3DBE6B;box-shadow:0 0 0 8px rgba(61,190,107,.2);transform:scale(1.25)}
 .tl::after{background:var(--fg)}
 @media (max-width:760px){
-#work h2{font-size:clamp(1.7rem,8.6vw,2.7rem);white-space:nowrap;margin-bottom:.7rem}
+#work h2{font-size:clamp(1.9rem,10.4vw,3.2rem);white-space:nowrap;margin-bottom:.7rem}
 .pinbox{padding-top:calc(72px + env(safe-area-inset-top,0px))}
 .floor{padding-top:28px}
 }
@@ -442,4 +442,18 @@ footer b{font-weight:500;margin-left:.4em}
  .vp{max-width:none}
  .pcar{max-width:540px}
  .spg{max-width:600px}
+}
+
+/* "Desktop site" on a phone, or a portrait tablet: the screen is tall, so sizes that follow the screen height (vh) become huge and leave empty gaps.
+   Here they follow the page width instead. Laptops (landscape) are not affected. */
+@media (min-width:761px) and (orientation:portrait){
+ .hero{min-height:0;padding:min(18vh,13vw) 5vw min(6vh,4vw)}
+ .sec{padding:min(12vh,8vw) 5vw}
+ .tl li{min-height:min(48vh,26vw)}
+ /* inside a door: normal stacked cards, without the tall sticky stack */
+ .rin{padding:min(6vh,5vw) 5vw min(14vh,8vw)}
+ .rcard{position:relative;top:auto;margin-bottom:0;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+ .rcard+.rcard{margin-top:1.4rem}
+ #rc::after{height:0}
+ .rcta{margin-top:0}
 }
